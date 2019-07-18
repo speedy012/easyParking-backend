@@ -1,0 +1,2 @@
+class UserParkingSpot < ApplicationRecord
+end
