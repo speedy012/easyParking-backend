@@ -6,7 +6,13 @@ class ParkingSpotsController < ApplicationController
     end
 
   def create
-    byebug
+
+    currentLocation = ParkingSpot.new(user_id: params[:user_id], latitude: params[:latitude], longitude: params[:longitude])
+
+    if currentLocation.save
+      render json: currentLocation
+  end
+
   end
 
 

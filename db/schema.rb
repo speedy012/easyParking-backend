@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_18_161656) do
+ActiveRecord::Schema.define(version: 2019_07_18_211135) do
 
   create_table "parking_spots", force: :cascade do |t|
     t.boolean "available", default: false
     t.integer "user_id"
-    t.integer "latitude"
-    t.integer "longitude"
+    t.string "latitude"
+    t.string "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
