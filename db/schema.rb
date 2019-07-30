@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_18_211135) do
+ActiveRecord::Schema.define(version: 2019_07_24_212506) do
 
   create_table "parking_spots", force: :cascade do |t|
-    t.boolean "available", default: false
+    t.boolean "available", default: true
     t.integer "user_id"
     t.string "latitude"
     t.string "longitude"

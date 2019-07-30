@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
+
   def create
-      # params: {username: '', email: '', password: ''}
+    # params: {username: '', email: '', password: ''}
     user = User.create(user_params)
 
     is_valid = user.valid?
@@ -15,8 +16,9 @@ class UsersController < ApplicationController
   end
 
   def profile
+
     # byebug
-    
+
     #how do we get user id?
     render json: curr_user
   end
