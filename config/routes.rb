@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get  '/profile', to: "users#profile"
   get '/allparkingspots', to: "parking_spots#index"
   post '/currentlocation', to: "parking_spots#create"
+  delete '/delete/:id', to: "parking_spots#destroy"
+  patch '/update/:id', to: "parking_spots#update"
 end
