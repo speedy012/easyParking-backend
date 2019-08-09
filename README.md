@@ -1,24 +1,9 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Installation
+- Clone down this repo 
+`$ git clone <repo url>`
+- Navigate into the directory 
+`$ cd easyParking-backend`
+- Run `$ bundle install`
+- Run `$ rails db:setup and $ rails db:migrate`
+Run $ rails server to boot the backend on port 3000 before starting the frontend to ensure the frontend hits the correct routes.
+Clone down and install the [frontend](https://github.com/speedy012/easyParking-frontend).
