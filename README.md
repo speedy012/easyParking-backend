@@ -1,3 +1,7 @@
+## Easy Parking
+This is the back-end repo for Easy Parking. 
+
+
 ## Installation
 - Clone down this repo 
 `$ git clone <repo url>`
